@@ -1,0 +1,22 @@
+from tkinter import *
+
+from tkinter import messagebox
+
+
+def message_box (
+    
+   messagebox.showinfo("information", "you are now deleting a file") 
+   messagebox.showwarning("warning", "this file will be deleted permanently")
+   messagebox.showerror("error", "there has been an error in deleting the file")
+   messagebox.askquestion("question", "would you like to restart?")
+   messagebox.askokcancel("confirm", "are you sure you want to delete this?")
+   messagebox.askyesno("ask", "yes or no?")
+   messagebox.askretrycancel("retry", "would you like to delete this file again?")
+   
+)
+
+message_button = Button(text="open message", fg="white", command=message_box)
+message_button.pack()
+
+
+mainloop()
